@@ -37,7 +37,7 @@
         margin-left: auto;
         margin-right: auto;
         height: 200px;
-        width: 470px;
+        width: 350px;
         padding: 0px 0px 0px 0px;
     }
 
@@ -45,10 +45,48 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        height: 100px;
-        width: 150px;
+        height: 70px;
+        width: 100px;
         margin: 17px 0px 10px 0px;
     }
+
+    .modal.modal-center {
+      text-align: center;
+    }
+
+
+
+    .modal-dialog.modal-center {
+      display: inline-block;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+
+
+
+
+
+    .bar1 {
+        width: 0px;
+        height: 10px; 
+        background-color: rgb(179, 255, 0);
+      }
+      @keyframes run {
+        from {
+          width: 0px;
+        }
+        to {
+          width: 100%;
+        }
+      }
+      .barr1 {
+        animation-name: run;
+        animation-duration: 2843s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+      }
 </style>
 
 <body style="background-color: #92fc70;">
