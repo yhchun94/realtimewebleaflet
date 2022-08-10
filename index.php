@@ -66,7 +66,9 @@
       </div>
     </header>
     <div style="background-color: #92fc70;">
-      <img src="cover_image.jpg" alt="cover image" class="center">
+      <a href="/detail.html">
+        <img src="cover_image.jpg" alt="cover image" class="center">
+      </a>
     </div>
   </section>
 
