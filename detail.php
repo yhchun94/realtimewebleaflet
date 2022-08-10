@@ -89,7 +89,7 @@
     }
     .barr2 {
       animation-name: run;
-      animation-duration: 2843s;
+      animation-duration: 1099s;
       animation-delay: 5s;
       animation-fill-mode: forwards;
       animation-iteration-count: infinite;
@@ -356,8 +356,8 @@
         up2 = setInterval(countUp2, 1000);
         function countUp2() {
             cnt2++;
-            if (cnt2 > 2843) { clearInterval(up2); } // 47:23 을 초로 변환 시 2843
-            if (cnt2 == 2843+1) { cnt2 = 0; setInterval(countUp2, 1000); } // 2843+1 = 2844초가 되었을 때 초기화
+            if (cnt2 > 1099) { clearInterval(up2); } // 18:19 을 초로 변환 시 1099
+            if (cnt2 == 1099+1) { cnt2 = 0; setInterval(countUp2, 1000); } // 1099+1 = 1100초가 되었을 때 초기화
             time2(cnt2);
         }
         function time2(seconds) {
