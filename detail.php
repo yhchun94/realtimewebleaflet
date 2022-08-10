@@ -57,10 +57,10 @@
     <header class="blog-header py-1" style="background-color: #fff; border-bottom: 1px solid #bbb;">
       <div class="row flex-nowrap justify-content-between align-items-center">
         <div class="col-4 pt-1 pl-5">
-          <a class="text-muted" href="/index.html"><i class="bi bi-chevron-left"></i></a>
+          <a class="text-muted" href="/index.php"><i class="bi bi-chevron-left"></i></a>
         </div>
         <div class="col-4 text-center">
-          <a class="blog-header-logo text-dark" href="/index.html">작품정보</a>
+          <a class="blog-header-logo text-dark" href="/index.php">작품정보</a>
         </div>
         <div class="col-4 d-flex justify-content-end align-items-center"></div>
       </div>
