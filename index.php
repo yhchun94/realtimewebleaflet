@@ -40,7 +40,6 @@
         width: 350px;
         padding: 0px 0px 0px 0px;
     }
-
     .image_list {
         display: block;
         margin-left: auto;
@@ -53,40 +52,91 @@
     .modal.modal-center {
       text-align: center;
     }
-
-
-
     .modal-dialog.modal-center {
       display: inline-block;
       text-align: left;
       vertical-align: middle;
     }
 
+    @keyframes run {
+      from {
+        width: 0px;
+      }
+      to {
+        width: 100%;
+      }
+    }
 
-
-
-
+    .bar {
+      width: 0px;
+      height: 10px; 
+      background-color: rgb(179, 255, 0);
+      animation-fill-mode: forwards;
+    }
 
     .bar1 {
-        width: 0px;
-        height: 10px; 
-        background-color: rgb(179, 255, 0);
-      }
-      @keyframes run {
-        from {
-          width: 0px;
-        }
-        to {
-          width: 100%;
-        }
-      }
-      .barr1 {
-        animation-name: run;
-        animation-duration: 2843s;
-        animation-delay: 0s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: infinite;
-      }
+      animation-name: run;
+      animation-duration: 400s;
+      animation-delay: -100s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    .bar2 {
+      animation-name: run;
+      animation-duration: 600s;
+      animation-delay: 0s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    .bar3 {
+      animation-name: run;
+      animation-duration: 2843s;
+      animation-delay: 0s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    .bar4 {
+      animation-name: run;
+      animation-duration: 1099s;
+      animation-delay: 0s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    .bar5 {
+      animation-name: run;
+      animation-duration: 1380s;
+      animation-delay: 0s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    .bar6 {
+      animation-name: run;
+      animation-duration: 1440s;
+      animation-delay: 0s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    .bar7 {
+      animation-name: run;
+      animation-duration: 960s;
+      animation-delay: 0s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    .bar8 {
+      animation-name: run;
+      animation-duration: 600s;
+      animation-delay: 0s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
 </style>
 
 <body style="background-color: #92fc70;">
@@ -95,16 +145,16 @@
     <header class="blog-header py-1" style="background-color: #fff; border-bottom: 1px solid #bbb;">
       <div class="row flex-nowrap justify-content-between align-items-center">
         <div class="col-4 pt-1 pl-5">
-          <a class="text-muted" href="/index.php"><i class="bi bi-chevron-left"></i></a>
+          <a class="text-muted" href="./index.php"><i class="bi bi-chevron-left"></i></a>
       </div>
       <div class="col-4 text-center">
-        <a class="blog-header-logo text-dark" href="/index.php">작품정보</a>
+        <a class="blog-header-logo text-dark" href="./index.php">작품정보</a>
       </div>
       <div class="col-4 d-flex justify-content-end align-items-center"></div>
       </div>
     </header>
     <div style="background-color: #92fc70;">
-      <a href="/detail.php">
+      <a href="./detail.php">
         <img src="cover_image.jpg" alt="cover image" class="center">
       </a>
     </div>
