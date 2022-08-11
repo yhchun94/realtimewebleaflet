@@ -93,7 +93,7 @@
     .bar3 {
       animation-name: run;
       animation-duration: 2843s;
-      animation-delay: 0s;
+      animation-delay: -90s;
       animation-timing-function: linear;
       animation-iteration-count: infinite;
     }
@@ -442,7 +442,7 @@
   <script>
     var cnt1 = 100;
     var cnt2 = 0;
-    var cnt3 = 0;
+    var cnt3 = 90;
     var cnt4 = 0;
     var cnt5 = 0;
     var cnt6 = 0;
