@@ -161,7 +161,7 @@
         </div>
         <div class="text-center mt-3 p-1" style="background-color: rgb(236, 236, 236)">3, 4 전시실</div>
 
-        <div style="height: 100px; cursor: pointer;" data-toggle="modal" data-target="#modal_1-1">
+        <div style="height: 100px; cursor: pointer;" data-toggle="modal" data-target="#modal_1-1" id="A" onclick="changeColor('A')">
           <div style="float:left; width: 25%;">
             <img src="img_1-1.png" alt="image" class="image_list">
           </div>
@@ -176,16 +176,16 @@
               <div class="bar bar1"></div>
             </div>
           </div>
-        </div><hr />
+        </div><hr style="margin: 0px;" />
 
-        <div style="height: 100px; cursor: pointer;" data-toggle="modal" data-target="#modal_1-2">
+        <div style="height: 100px; cursor: pointer;" data-toggle="modal" data-target="#modal_1-2" id="B" onclick="changeColor('B')">
           <div style="float:left; width: 25%;">
             <img src="img_1-1.png" alt="image" class="image_list">
           </div>
           <div style="float:left; margin: 10px 0px 0px 0px; width: 75%;" class="pl-4">
             <div style="display: flex;">
-              <div class="mt-3" style="flex: 1;">1-1. 깨진 창문들의 도시 - 깨어지지 않은 창문들</div>
-              <div class="mt-3 text-right" style="flex: 1;">
+              <div class="mt-2" style="flex: 2 1;">1-1. 깨진 창문들의 도시 - 깨어지지 않은 창문들</div>
+              <div class="mt-2 text-right" style="flex: 1;">
                 <span id="timing2">00:00</span> / <span>10:00</span>
               </div>
             </div>
@@ -193,9 +193,9 @@
               <div class="bar bar2"></div>
             </div>
           </div>
-        </div><hr />
+        </div><hr style="margin: 0px;" />
         
-        <div style="height: 100px; cursor: pointer;" data-toggle="modal" data-target="#modal_2">
+        <div style="height: 100px; cursor: pointer;" data-toggle="modal" data-target="#modal_2" id="C" onclick="changeColor('C')">
           <div style="float:left; width: 25%;">
             <img src="img_1.png" alt="image" class="image_list">
           </div>
@@ -210,9 +210,9 @@
               <div class="bar bar3"></div>
             </div>
           </div>
-        </div><hr />
+        </div><hr style="margin: 0px;" />
 
-        <div style="height: 100px; cursor: pointer;" data-toggle="modal" data-target="#modal_3">
+        <div style="height: 100px; cursor: pointer;" data-toggle="modal" data-target="#modal_3" id="D" onclick="changeColor('D')">
           <div style="float:left; width: 25%;">
             <img src="img_2.png" alt="image" class="image_list">
           </div>
@@ -227,9 +227,9 @@
               <div class="bar bar4"></div>
             </div>
           </div>
-        </div><hr>
+        </div><hr style="margin: 0px;" />
 
-        <div style="height: 100px; cursor: pointer;" data-toggle="modal" data-target="#modal_4">
+        <div style="height: 100px; cursor: pointer;" data-toggle="modal" data-target="#modal_4" id="E" onclick="changeColor('E')">
           <div style="float:left; width: 25%;">
             <img src="img_3.png" alt="image" class="image_list">
           </div>
@@ -244,9 +244,9 @@
               <div class="bar bar5"></div>
             </div>
           </div>
-        </div><hr>
+        </div><hr style="margin: 0px;" />
 
-        <div style="height: 100px; cursor: pointer;" data-toggle="modal" data-target="#modal_5">
+        <div style="height: 100px; cursor: pointer;" data-toggle="modal" data-target="#modal_5" id="F" onclick="changeColor('F')">
           <div style="float:left; width: 25%;">
             <img src="img_4.png" alt="image" class="image_list">
           </div>
@@ -261,9 +261,9 @@
               <div class="bar bar6"></div>
             </div>
           </div>
-        </div><hr>
+        </div><hr style="margin: 0px;" />
 
-        <div style="height: 100px; cursor: pointer;" data-toggle="modal" data-target="#modal_6">
+        <div style="height: 100px; cursor: pointer;" data-toggle="modal" data-target="#modal_6" id="G" onclick="changeColor('G')">
           <div style="float:left; width: 25%;">
             <img src="img_5.png" alt="image" class="image_list">
           </div>
@@ -278,11 +278,11 @@
               <div class="bar bar7"></div>
             </div>
           </div>
-        </div><hr>
+        </div><hr style="margin: 0px;" />
 
         <div class="text-center mt-3 p-1" style="background-color: rgb(236, 236, 236)">프로젝트 갤러리</div>
 
-        <div style="height: 100px; cursor: pointer;" data-toggle="modal" data-target="#modal_7">
+        <div style="height: 100px; cursor: pointer;" data-toggle="modal" data-target="#modal_7" id="H" onclick="changeColor('H')">
           <div style="float:left; width: 25%;">
             <img src="img_6.png" alt="image" class="image_list">
           </div>
@@ -568,6 +568,21 @@
       var sec = seconds % 60 < 10 ? '0'+seconds % 60 : seconds % 60;
       document.getElementById("timing8").innerHTML = min+":" + sec;
     }
+
+    function changeColor(elementID){
+      document.getElementById(elementID).style.backgroundColor = "#D8FAFF";
+    }
+
+    $(document).mouseup(function (e){
+      document.getElementById('A').style.backgroundColor = "#fff";
+      document.getElementById('B').style.backgroundColor = "#fff";
+      document.getElementById('C').style.backgroundColor = "#fff";
+      document.getElementById('D').style.backgroundColor = "#fff";
+      document.getElementById('E').style.backgroundColor = "#fff";
+      document.getElementById('F').style.backgroundColor = "#fff";
+      document.getElementById('G').style.backgroundColor = "#fff";
+      document.getElementById('H').style.backgroundColor = "#fff";
+    });
 
     jQuery.noConflict();
 
